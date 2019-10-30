@@ -6,6 +6,7 @@ install:
 
 script:
   - python3 -m unittest 
-  - coveralls/test_rpn.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report
+  - coverage run python3 -m unittest
+  
 after_success:
   - coveralls
