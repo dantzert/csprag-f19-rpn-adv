@@ -6,7 +6,4 @@ install:
 
 script:
   - python3 -m unittest 
-  - python3 coverage run test_rpn.py
-  
-after_success:
-  - coveralls
+  - python3 -m coverage report test_rpn.py
