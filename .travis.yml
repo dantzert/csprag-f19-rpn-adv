@@ -6,6 +6,4 @@ install:
 script:
   - python -m unittest 
   - python -m coverage run test_rpn.py
-
-after_success:
   - python -m coverage report
