@@ -3,7 +3,6 @@ python:
   - "3.5"
 install:
   - pip install coverage
-script:
-  - python -m unittest 
-  - python -m coverage run test_rpn.py
+script: 
+  - python -m coverage run -m unittest
   - python -m coverage report
