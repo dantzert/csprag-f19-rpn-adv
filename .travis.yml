@@ -5,5 +5,5 @@ install:
   - pip install coveralls
 
 script:
-  - python3 -m unittest 
-  - python3 -m coverage report test_rpn.py
+  - python -m unittest 
+  - python -m coverage report test_rpn.py
