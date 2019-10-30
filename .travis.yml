@@ -4,6 +4,8 @@ python:
 install:
   - pip install coveralls
 
-script: python3 -m unittest coveralls/test_rpn.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report
+script:
+  - python3 -m unittest 
+  - coveralls/test_rpn.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report
 after_success:
   - coveralls
