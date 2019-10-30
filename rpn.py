@@ -18,7 +18,11 @@ def calculate(string):
 			arg1 = stack.pop()
 			result = arg1**arg2
 			stack.append(result)
-
+		elif token == 'Q':
+			# this code won't get tested
+			stack.pop()
+			stack.pop()
+			print("what have you done")
 		else:
 			stack.append(int(token))
 	
